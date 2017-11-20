@@ -390,6 +390,8 @@ func resources(c *Config) Map {
 	api(c, m)
 	iam(c, m)
 	dns(c, m)
+	alerting(c, m)
+
 	return m
 }
 
