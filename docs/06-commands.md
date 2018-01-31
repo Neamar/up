@@ -55,10 +55,10 @@ Commands:
 
 Examples:
 
-  Deploy the project to the development stage.
+  Deploy the project to staging.
   $ up
 
-  Deploy the project to the production stage.
+  Deploy the project to production.
   $ up deploy production
 
   Show the development endpoint url.
