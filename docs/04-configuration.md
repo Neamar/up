@@ -592,9 +592,8 @@ You may also provide an optional base path, for example to prefix your API with 
 
 Plan the changes via `up stack plan` and `up stack apply` to perform the changes. Note that CloudFront can take up to ~40 minutes to distribute this configuration globally, so grab a coffee while these changes are applied.
 
-Custom stages may be supported in the future, for now there are three:
+Custom stages may be supported in the future, for now there are two:
 
-- `development`
 - `staging`
 - `production`
 
