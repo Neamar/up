@@ -18,9 +18,8 @@ import (
 func init() {
 	cmd := root.Command("deploy", "Deploy the project.").Default()
 	stage := cmd.Arg("stage", "Target stage name.").Default("staging").String()
-	cmd.Example(`up deploy`, "Deploy the project to the development stage.")
-	cmd.Example(`up deploy staging`, "Deploy the project to the staging stage.")
-	cmd.Example(`up deploy production`, "Deploy the project to the production stage.")
+	cmd.Example(`up deploy`, "Deploy the project the staging environment.")
+	cmd.Example(`up deploy production`, "Deploy the project to the production environment.")
 
 	cmd.Action(func(_ *kingpin.ParseContext) error {
 		return deploy(*stage)

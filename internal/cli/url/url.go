@@ -16,9 +16,9 @@ import (
 func init() {
 	cmd := root.Command("url", "Show, open, or copy a stage endpoint.")
 
-	cmd.Example(`up url`, "Show the development endpoint.")
-	cmd.Example(`up url --open`, "Open the development endpoint in the browser.")
-	cmd.Example(`up url --copy`, "Copy the development endpoint to the clipboard.")
+	cmd.Example(`up url`, "Show the staging endpoint.")
+	cmd.Example(`up url --open`, "Open the staging endpoint in the browser.")
+	cmd.Example(`up url --copy`, "Copy the staging endpoint to the clipboard.")
 	cmd.Example(`up url production`, "Show the production endpoint.")
 	cmd.Example(`up url -o production`, "Open the production endpoint in the browser.")
 	cmd.Example(`up url -c production`, "Copy the production endpoint to the clipboard.")

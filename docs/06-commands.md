@@ -485,7 +485,7 @@ $ up metrics production -s 15d
 
 ## Start
 
-Start development server. The development server runs the same proxy that is used in production for serving, so you can test a static site or application locally with the same feature-set.
+Start development server. The development server runs the same proxy that is used in production for serving, so you can test a static site or application locally with the same feature-set. The `UP_STAGE` and `NODE_ENV` environment variables will are set to "development".
 
 Currently `up start` does not work with cross-compiled languages such as Go or Crystal.
 

@@ -373,9 +373,6 @@ Suppose you wanted to map the "staging" stage, you would first add it to `up.jso
   "name": "up-example",
   "profile": "up-tobi",
   "stages": {
-    "development": {
-      "domain": "dev.up-example.com"
-    },
     "staging": {
       "domain": "stage.up-example.com"
     },
