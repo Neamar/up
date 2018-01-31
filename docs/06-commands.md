@@ -61,7 +61,7 @@ Examples:
   Deploy the project to production.
   $ up deploy production
 
-  Show the development endpoint url.
+  Show the staging endpoint url.
   $ up url
 
   Tail project logs.
@@ -82,7 +82,7 @@ Examples:
 
 ## Deploy
 
-Deploy the project, by default to the "development" stage. Note that running `up` and `up deploy` are identical, however for staging and production you must run `up deploy <stage>`.
+Deploy the project, by default to the "staging" stage. Note that running `up` and `up deploy` are identical, as it is the default command.
 
 ```
 Usage:
