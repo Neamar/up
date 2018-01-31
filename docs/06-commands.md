@@ -220,7 +220,7 @@ $ up -e 'path = "/static/*"'
            ip: 70.66.179.182
        method: GET
          path: /static/3.jpg
-        stage: development
+        stage: production
       version: 5
 
 1:36:34pm INFO response
@@ -230,7 +230,7 @@ $ up -e 'path = "/static/*"'
        method: GET
          path: /static/3.jpg
          size: 0 B
-        stage: development
+        stage: production
        status: 304
       version: 5
 
@@ -239,7 +239,7 @@ $ up -e 'path = "/static/*"'
            ip: 70.66.179.182
        method: GET
          path: /static/1.png
-        stage: development
+        stage: production
       version: 5
 ```
 
