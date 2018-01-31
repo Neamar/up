@@ -17,7 +17,7 @@ import (
 
 func init() {
 	cmd := root.Command("deploy", "Deploy the project.").Default()
-	stage := cmd.Arg("stage", "Target stage name.").Default("development").String()
+	stage := cmd.Arg("stage", "Target stage name.").Default("staging").String()
 	cmd.Example(`up deploy`, "Deploy the project to the development stage.")
 	cmd.Example(`up deploy staging`, "Deploy the project to the staging stage.")
 	cmd.Example(`up deploy production`, "Deploy the project to the production stage.")

@@ -23,7 +23,7 @@ func init() {
 	cmd.Example(`up url -o production`, "Open the production endpoint in the browser.")
 	cmd.Example(`up url -c production`, "Copy the production endpoint to the clipboard.")
 
-	stage := cmd.Arg("stage", "Name of the stage.").Default("development").String()
+	stage := cmd.Arg("stage", "Name of the stage.").Default("staging").String()
 	open := cmd.Flag("open", "Open endpoint in the browser.").Short('o').Bool()
 	copy := cmd.Flag("copy", "Copy endpoint to the clipboard.").Short('c').Bool()
 

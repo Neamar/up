@@ -79,9 +79,6 @@ func TestStages_Validate(t *testing.T) {
 
 	t.Run("some stages", func(t *testing.T) {
 		s := Stages{
-			Development: &Stage{
-				Domain: "gh-polls-dev.com",
-			},
 			Staging: &Stage{
 				Domain: "gh-polls-stage.com",
 			},
@@ -92,7 +89,6 @@ func TestStages_Validate(t *testing.T) {
 
 		assert.NoError(t, s.Default(), "validate")
 		assert.NoError(t, s.Validate(), "validate")
-		assert.Equal(t, "development", s.Development.Name)
 		assert.Equal(t, "staging", s.Staging.Name)
 		assert.Equal(t, "production", s.Production.Name)
 	})

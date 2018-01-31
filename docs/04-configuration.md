@@ -197,7 +197,7 @@ These become available to you via `process.env.API_FEATURES_FOO`, `os.Getenv("AP
 The following environment variables are provided by Up:
 
 - `PORT` – port number such as "3000"
-- `UP_STAGE` – stage name such as "development" or "production"
+- `UP_STAGE` – stage name such as "staging" or "production"
 
 ## Header Injection
 
@@ -571,9 +571,6 @@ By defining a stage and its `domain`, Up knows it will need to create a free SSL
     },
     "staging": {
       "domain": "stage.gh-polls.com"
-    },
-    "development": {
-      "domain": "dev.gh-polls.com"
     }
   }
 }
